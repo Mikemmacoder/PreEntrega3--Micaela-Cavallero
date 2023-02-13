@@ -12,52 +12,17 @@
     padding: 0px;
 }
 
-header {
-    background: linear-gradient(to top right, #0575E6, #021B79);
-    height: 80px;
-    padding: 10px 0px;
-    margin: 0px;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 .logo{
-    height: 90px;
-    padding-left: 15px; 
+    height: 60px;
 }
-
-nav li{
-    display: inline;
-    padding: 20px 10px;
-    margin: 0px;
-}
-
-nav li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    letter-spacing: 1px;
-}
-
-main {
-    background: linear-gradient(to bottom right, #0575E6, #60bfff, azure);
-    margin: 80px 0px 0px 0px;
-    padding: 30px 15px 15px 0px;   
+.but{
+    height: auto;
 }
 
 h1{
-    text-align: center;
     font-weight: 900;
-    font-size: 65px;
-    color: #00e1ff;
-    padding: 15px 15px 15px 15px;
+    font-size: 45px;
+    color: #021B79;
     letter-spacing: 1px;
 }
 .titulos{
@@ -80,7 +45,7 @@ h4{
     text-align: center;
     padding: 10px 100px 50px 100px;
     margin: 0px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .videoConteiner{
     display: flex;
@@ -113,9 +78,6 @@ h4{
 }
 .servi {
     width: 40%;
-}
-.nombreYlogo{
-    justify-content: left;
 }
 
 .botonWap {
@@ -190,11 +152,6 @@ footer a{
 }
 
 /*media query*/
-@media (min-width: 767px){
-    .navbar-toggle {
-        display: none;
-    }
-}
 @media (max-width: 1050px){
     .publi {
         width: 40%;
@@ -218,4 +175,22 @@ footer a{
         display: block;
         cursor: pointer;
     }
+    .textoDescriptivo{
+        padding: 10px 50px 50px 50px;
+        text-align: justify;
+    }
+    .texto{
+        text-align: justify;
+    }
+    .derechos{
+        text-align: center;
+    }
 }
+@media (max-width: 500px) {
+    .textoDescriptivo{
+        padding: 0px 30px 0px 30px;
+        
+    }
+}
+
+

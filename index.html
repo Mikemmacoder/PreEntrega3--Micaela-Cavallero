@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Css/style.css">
     <title>Home</title>
 </head>
 
-<body> 
+<body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="recursos/logo-Ikigai.png" alt="logo">
+                    <img class="logo" src="img/logo.png" alt="logo">
                 </a>
                 <h1>IKIGAI</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,36 +39,35 @@
     </header>
 
     <main>
-        <h2 class="titulos">Título: ¿Frase inspiradora?</h2>
         <!--Carousel de imágenes linkeadas a los servicios-->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner carousel">
                 <div class="carousel-item active">
-                    <img src="img/img.coaching.equipo.jpg" class="d-block w-100" alt="Grupo de personas sentadas alrededor de una mesa trabajando">
+                    <a href="pages/servicios.html"><img src="img/img.coachingequipo.jpg" class="d-block w-100"
+                            alt="Grupo de personas trabajando"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="titulos">Coaching de equipos</h3>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h3 class="textCarousel">Coaching de equipos</h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img.coaching.personal.jpg" class="d-block w-100" alt="Persona mirando la puesta de sol">
+                    <a href="pages/servicios.html"><img src="img/coaching.personal.hombre.jpg" class="d-block w-100"
+                            alt="Persona de espaldas, con ambos brazos estirados hacia arriba"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="titulos">Coaching personal</h3>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h3 class="textCarousel">Coaching personal</h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img.coaching.de.pareja.jpg" class="d-block w-100" alt="Dos personas formando un corazón con sus manos">
+                    <a href="pages/servicios.html"><img src="img/img.coaching.de.pareja.jpg" class="d-block w-100"
+                            alt="Dos personas formando un corazón con sus manos"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="titulos">Coaching de pareja</h3>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h3 class="textCarousel">Coaching de pareja</h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img.programas.a.medida.jpg" class="d-block w-100" alt="Papel con dos lápices para escribir">
+                    <a href="pages/servicios.html"><img src="img/img.programas.a.medida.jpg" class="d-block w-100"
+                            alt="Papel con dos lápices para escribir"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="titulos">Programas a medida</h3>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h3 class="textCarousel">Programas a medida</h3>
                     </div>
                 </div>
             </div>
@@ -82,18 +82,18 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
- class="texto"
-        <h2 class="titulos">Subtítulo</h2>
+
+        <h2 class="titulos">Título: ¿Frase inspiradora?</h2>
         <p class="textoDescriptivo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur debitis
             maiores adipisci dolor incidunt quia, ipsa eum veniam amet iure ab saepe consequatur? Quod, provident!
             Tempora, dolores ipsam nesciunt veniam quibusdam, ab vitae nihil molestias neque, in sed molestiae sint
             accusantium suscipit asperiores. Molestiae nihil iure deserunt impedit saepe dolorum officiis repudiandae
             deleniti blanditiis culpa quis pariatur quas esse laborum expedita, nesciunt sunt sit, laboriosam
             laudantium? Praesentium quis distinctio tempore.</p>
-        <section>
+        <section class="seccionTesti">
             <h3 class="titulos">Testimonios</h3>
-            <div class="videoConteiner">
-                <iframe class="videoPrincipal" width="560" height="315" src="https://www.youtube.com/embed/3wyNBLLyNxk"
+            <div data-aos="fade-up" data-aos-duration="3000" class="videoConteiner">
+                <iframe class="videoPrincipal object-fit" src="https://www.youtube.com/embed/3wyNBLLyNxk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -102,21 +102,22 @@
             <div class="contenedorPadre">
                 <article class="contenedorHijo">
                     <h4 class="titulos">Testimonio 1</h4>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum tempore facilis alias
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum tempore
+                        facilis alias
                         quia quibusdam quis quaerat vel voluptas a nisi pariatur ipsa velit quam id, exercitationem
                         sint, dolor molestiae!</p>
                 </article>
-
                 <article class="contenedorHijo">
                     <h4 class="titulos">Testimonio 2</h4>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum tempore facilis alias
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum tempore
+                        facilis alias
                         quia quibusdam quis quaerat vel voluptas a nisi pariatur ipsa velit quam id, exercitationem
                         sint, dolor molestiae!</p>
                 </article>
-
                 <article class="contenedorHijo">
                     <h4 class="titulos">Testimonio 3</h4>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum tempore facilis alias
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laborum tempore
+                        facilis alias
                         quia quibusdam quis quaerat vel voluptas a nisi pariatur ipsa velit quam id, exercitationem
                         sint, dolor molestiae!</p>
                 </article>
@@ -171,6 +172,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

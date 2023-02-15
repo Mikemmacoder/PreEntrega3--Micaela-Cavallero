@@ -17,7 +17,9 @@
 .but{
     height: auto;
 }
-
+.navConfig{
+    background: linear-gradient(to top right, #0575E6, #0080ff, #00b7ff, #00c3ff);
+}
 h1{
     font-weight: 700;
     font-size: 45px;

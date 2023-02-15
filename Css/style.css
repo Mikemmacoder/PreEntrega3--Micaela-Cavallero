@@ -73,7 +73,21 @@ h4{
     margin: 5px;
     padding: 15px;
     text-align: justify;
+    font-size: 17px;
 }
+.centrar{
+    text-align: center;
+}
+.momento:hover{
+    background-color: #b0ecff;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+.consultas:hover{
+    font-size: 20px;
+    transition: all 0.7s;
+}
+
 .padrePubli {
     flex-wrap: wrap;
 }
@@ -158,7 +172,6 @@ footer a{
     .videoPrincipal {
         height: 500px;
         width: 85%
-    
     }
 }
 
@@ -202,15 +215,10 @@ footer a{
     .videoPrincipal {
         height: 271px;
         width: 100%
-    
     }
 }
 
 .textCarousel{
     color: rgb(19, 15, 15);
     font-weight: 800;
-
 }
-
-
-/*width="560" height="315"*/

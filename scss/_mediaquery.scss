@@ -1,0 +1,72 @@
+/*MEDIA QUERY*/
+@media (max-width: 1050px) {
+	.publi {
+		width: 40%;
+	}
+	.videoPrincipal {
+		height: 500px;
+		width: 85%;
+	}
+}
+@media (max-width: 1024px) {
+	.hijoT{
+		width: 45%;
+	}
+	.contenedorServi{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.servi {
+		width: 90%;
+	}
+	.publi {
+		width: 90%;
+	}
+	.textoDescriptivo {
+		padding: 0.7rem 3rem 3rem 3rem;
+		text-align: justify;
+	}
+	.videoPrincipal {
+		height: 24rem;
+		width: 90%;
+	}
+	.hijoT{
+		width: 90%;
+	}
+	.padreContacto{
+		background-image: none;
+		justify-content:center;
+	} 
+	.hijoContacto {
+		margin: 1rem;
+		border: rgb(177, 177, 177) solid 1px;
+		background-color: $color_3;
+	}
+	
+}
+
+@media (max-width: 500px) {
+	.textoDescriptivo {
+		padding: 0rem 2rem 0rem 2rem;
+	}
+	.videoPrincipal {
+		height: 17rem;
+		width: 100%;
+	}
+	.textos {
+		font-size: 1rem;
+	}
+	.nosDescripcion{
+		padding: 1rem;
+		margin: 0.5rem;
+	}
+}
+@media (max-width: 320px) {
+	.contenedorHijo {
+		margin: 0.5rem;
+		padding: 0.5rem;
+	}
+}

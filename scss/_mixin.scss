@@ -1,0 +1,18 @@
+@mixin textos {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 400;
+    color: $color_4;
+}
+@mixin titulos {
+    text-align: center;
+	font-weight: 700;
+	color: $color_2;
+	padding: 2rem;
+	margin-top: 2rem;
+    font-family: Genos;
+}
+@mixin margin{
+    margin: 1rem;
+	padding: 1rem 2rem;
+}

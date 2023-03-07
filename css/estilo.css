@@ -1,0 +1,391 @@
+/*FUENTES*/
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Charmonman&family=Genos:ital,wght@1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Charmonman&family=Genos:ital,wght@1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: Genos;
+  src: url(../Fuentes/Genos-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Charmonman;
+  src: url(../Fuentes/Charmonman-Bold.ttf);
+}
+@font-face {
+  font-family: HindiSiliguri;
+  src: url(../Fuentes/HindSiliguri-Medium.ttf);
+}
+/*VARIABLES*/ /*GENERALES*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*HEADER*/
+.logo {
+  height: 3.7rem;
+}
+
+.navConfig {
+  background: linear-gradient(to top right, #00c3ff, #00b7ff, #0080ff, #0575E6);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: rgb(6, 0, 83);
+  letter-spacing: 0.15rem;
+  font-family: Genos;
+}
+
+/* CAROUSEL */
+.but {
+  height: auto;
+}
+
+.textCarousel {
+  color: rgb(19, 15, 15);
+  font-weight: 700;
+}
+
+/*TEXTOS*/
+.titulos {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(6, 0, 83);
+  padding: 2rem;
+  margin-top: 2rem;
+  font-family: Genos;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.momento:hover {
+  background-color: #b0ecff;
+  border-radius: 1.5rem;
+  transition: all 0.5s;
+}
+
+.consultas:hover {
+  font-size: 1.2rem;
+  transition: all 0.7s;
+}
+
+.textos {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 400;
+  color: rgb(19, 15, 15);
+}
+
+.textoTesti {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 400;
+  color: rgb(19, 15, 15);
+  font-style: italic;
+}
+
+.textosPubli {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 400;
+  color: rgb(19, 15, 15);
+  font-size: 0.7rem;
+}
+
+.nosDescripcion {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 400;
+  color: rgb(19, 15, 15);
+  padding: 0.5rem 2rem;
+  margin: 0.5rem 3rem;
+}
+
+.borde {
+  border-bottom: 1px solid gray;
+}
+
+/*FUENTES*/
+@font-face {
+  font-family: Genos;
+  src: url(../Fuentes/Genos-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Charmonman;
+  src: url(../Fuentes/Charmonman-Bold.ttf);
+}
+@font-face {
+  font-family: HindiSiliguri;
+  src: url(../Fuentes/HindSiliguri-Medium.ttf);
+}
+/*FLEX*/
+.contenedorPadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contenedorHijo {
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoT {
+  width: 27%;
+}
+
+.padrePubli {
+  flex-wrap: wrap;
+}
+
+.publi {
+  width: 40%;
+  border: solid gray 1px;
+  border-radius: 4px;
+}
+
+.servi {
+  width: 40%;
+}
+
+.padreContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../img/goforit.png);
+  background-size: cover;
+}
+
+.hijoContacto {
+  border-radius: 0.5rem;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 5rem 1rem 1rem 5rem;
+}
+
+/*** GRID ***/
+.contenedorServi {
+  display: grid;
+  grid-template-areas: "h1 f1" "f2 h2" "h3 f3" "f4 h4";
+  gap: 20px;
+}
+
+.hijoServi1 {
+  grid-area: h1;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi1f {
+  grid-area: f1;
+  border-radius: 4px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi2 {
+  grid-area: h2;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi2f {
+  grid-area: f2;
+  border-radius: 4px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi3 {
+  grid-area: h3;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi3f {
+  grid-area: f3;
+  border-radius: 4px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi4 {
+  grid-area: h4;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hijoServi4f {
+  grid-area: f4;
+  border-radius: 4px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+/*VIDEOS*/
+.videoConteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.oject-fit {
+  scale: scale-down;
+}
+
+.videoPrincipal {
+  margin: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 1.3rem;
+  height: 37.5rem;
+  width: 78%;
+}
+
+/*WHATSAPP*/
+.botonWap {
+  position: fixed;
+  top: auto;
+  bottom: 3rem;
+  left: auto;
+  right: 1.3rem;
+  width: 3rem;
+}
+
+.contenedorWap {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(to bottom right, #00c3ff, #00b7ff, #0080ff, #0575E6);
+  padding: 0.2rem 1rem;
+  height: auto;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(6, 0, 83);
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: rgb(6, 0, 83);
+  text-decoration: none;
+  padding: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.derechos {
+  border-top: 1px solid azure;
+  font-size: small;
+  color: azure;
+}
+
+.redesFooter {
+  margin: 0px;
+}
+
+.tituloCon {
+  color: rgb(0, 61, 141);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 1050px) {
+  .publi {
+    width: 40%;
+  }
+  .videoPrincipal {
+    height: 500px;
+    width: 85%;
+  }
+}
+@media (max-width: 1024px) {
+  .hijoT {
+    width: 45%;
+  }
+  .contenedorServi {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .servi {
+    width: 90%;
+  }
+  .publi {
+    width: 90%;
+  }
+  .textoDescriptivo {
+    padding: 0.7rem 3rem 3rem 3rem;
+    text-align: justify;
+  }
+  .videoPrincipal {
+    height: 24rem;
+    width: 90%;
+  }
+  .hijoT {
+    width: 90%;
+  }
+  .padreContacto {
+    background-image: none;
+    justify-content: center;
+  }
+  .hijoContacto {
+    margin: 1rem;
+    border: rgb(177, 177, 177) solid 1px;
+    background-color: azure;
+  }
+}
+@media (max-width: 500px) {
+  .textoDescriptivo {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .videoPrincipal {
+    height: 17rem;
+    width: 100%;
+  }
+  .textos {
+    font-size: 1rem;
+  }
+  .nosDescripcion {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .contenedorHijo {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
